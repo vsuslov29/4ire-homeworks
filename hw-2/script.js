@@ -1,5 +1,5 @@
 const FIRST_NUMBER = 0;
-const SECOND_NUMBER = 2;
+const SECOND_NUMBER = 1;
 let serialNumber;
 let isNumberCorrect;
 
