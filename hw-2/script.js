@@ -7,7 +7,7 @@ do {
   isNumberCorrect = true;
   serialNumber = +prompt("Enter serial number of fibonacci row");
 
-  if (isNaN(serialNumber) || Math.trunc(serialNumber) !== serialNumber || !serialNumber) {
+  if (isNaN(serialNumber) || Math.trunc(serialNumber) !== serialNumber) {
     alert("Please, enter an integer");
     isNumberCorrect = false;
   }
