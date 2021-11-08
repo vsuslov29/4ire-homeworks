@@ -16,7 +16,7 @@ const getSpecifiedFibonacciNumber = (
 
 const getByPositiveNumber = (firstNumber, secondNumber, serialNumber) => {
   let nextNumber;
-// start from 2nd index in positive direction
+  // start from 2nd index in positive direction
   for (let i = 2; i <= serialNumber; i++) {
     nextNumber = firstNumber + secondNumber;
     firstNumber = secondNumber;
@@ -28,7 +28,7 @@ const getByPositiveNumber = (firstNumber, secondNumber, serialNumber) => {
 
 const getByNegativeNumber = (firstNumber, secondNumber, serialNumber) => {
   let prevNumber;
-// start from -1st index in negative direction
+  // start from -1st index in negative direction
   for (let i = -1; i >= serialNumber; i--) {
     prevNumber = secondNumber - firstNumber;
     secondNumber = firstNumber;
@@ -39,8 +39,8 @@ const getByNegativeNumber = (firstNumber, secondNumber, serialNumber) => {
 };
 
 const formatNumberToSerialString = (number) => {
-  let i = number % 10;
-  let j = number % 100;
+  let i = Math.abs(number % 10);
+  let j = Math.abs(number % 100);
 
   if (i === 1 && j !== 11) return number + "st";
   if (i === 2 && j !== 12) return number + "nd";
